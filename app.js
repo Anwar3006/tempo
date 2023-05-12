@@ -1,5 +1,11 @@
-const sayHi = (name) => {
-  console.log(`Hello ${name}`)
-}
+const EventEmitter = require('events')
 
-module.exports = sayHi
+const customEmitter = new EventEmitter()
+
+customEmitter.on('response', () => {
+    console.log('Data received')
+});
+
+customEmitter.emit('response')
+
+//learn file streams and how to send chunkced data instead of the full data to the client

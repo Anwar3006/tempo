@@ -1,5 +1,5 @@
 const data = require('./names');
-const sayHi = require('./app');
+const sayHi = require('./applic');
 // const stuff = require('./names')
 
 sayHi(data.names.pete)
